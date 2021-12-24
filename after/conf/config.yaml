@@ -1,0 +1,10 @@
+defaults:
+  - files: mnist
+  - _self_
+paths:
+  log: ./runs
+  data: ${hydra:runtime.cwd}/../data/raw
+params:
+  epoch_count: 20
+  lr: 5e-5
+  batch_size: 128
